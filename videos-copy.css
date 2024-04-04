@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #a34e4e, #c49b14, #20be4f);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    padding: 10px 0;
+}
+
+/* Content styles */
+.content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* Navigation links styles */
+.links {
+    list-style: none;
+    display: flex;
+}
+
+.links li {
+    padding: 0 20px;
+}
+
+.links li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.links li a.active,
+.links li a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.video {
+    flex: 1 1 calc(33.333% - 20px);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .video {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .video {
+        flex: 1 1 100%;
+    }
+}
