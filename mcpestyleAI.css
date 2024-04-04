@@ -1,0 +1,113 @@
+/* Importing the 'Orbitron' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* General body styles */
+.body2 {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Wrapper styles */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  padding: 10px 0;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+.links li {
+  padding: 0 20px;
+}
+
+.links li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.links li a.active,
+.links li a:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+/* Heading styles */
+.pocket {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Button styles */
+.button {
+    font-family: 'Orbitron', sans-serif;
+    background-image: linear-gradient(to right, #a710ff, #0026ff);
+    color: #ffffff;
+    border: none;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px #333;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    animation: buttond 15s ease infinite;
+}
+
+@keyframes buttond {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.button:hover {
+    box-shadow: 0 0 5px #8c00ff, 0 0 25px #8c00ff, 0 0 50px #8c00ff, 0 0 200px #8c00ff;
+    font-size: 20px;
+}
+
+/* Button container styles */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
