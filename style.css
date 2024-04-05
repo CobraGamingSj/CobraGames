@@ -66,52 +66,58 @@ nav {
   text-shadow: 0 0 10px #ffcc00;
 }
 
-/* Button styles */
 button {
-    font-family: 'Orbitron', sans-serif;
-    background-image: linear-gradient(to right, #a710ff, #0026ff);
-    color: #ffffff;
-    border: none;
-    padding: 20px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 10px;
-    cursor: pointer;
-    box-shadow: 0 5px #333;
-    transition: all 0.3s ease;
-    border-radius: 8px;
-    animation: buttond 15s ease infinite;
+  font-family: 'Orbitron', sans-serif;
+  background-image: linear-gradient(45deg, #6c00c4, #0026ff, #00c3ff);
+  color: #ffffff;
+  border: none;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px #333;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  /* Added animated gradient */
+  background-size: 200% 200%;
+  animation: gradientShift 5s linear infinite;
 }
 
-@keyframes buttond {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+/* Add keyframes for the gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 100% 50%; }
+  50% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 button:hover {
-    box-shadow: 0 0 5px #8c00ff, 0 0 25px #8c00ff, 0 0 50px #8c00ff, 0 0 200px #8c00ff;
-    font-size: 20px;
+  box-shadow: 0 0 5px #8c00ff, 0 0 25px #8c00ff, 0 0 50px #8c00ff, 0 0 200px #8c00ff;
+  font-size: 20px;
 }
 
-/* Button container styles */
 .buttons-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
 }
 
-/* Audio player styles */
+
+
+
 .mp3 {
     display: none;
 }
 
-/* Paragraph styles */
+
 .p-1 {
     background-color: #1c1c1c;
     padding: 15px;
-    border-left: 5px solid #e62200;
+    border-left: 5px solid #5900ff;
     margin: 20px 0;
+    font-size: large;
 }
