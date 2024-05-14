@@ -55,10 +55,15 @@ nav {
 
 /* Logo styles */
 .logo a {
-    color: #f0f0f0;
+    color: #64009e;
     text-decoration: none;
     font-size: 1.5em;
-}
+  }
+  .logo a:hover {
+    color: #7d0cbe;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px #7d0cbe;
+  }
 
 /* Navigation links styles */
 .links {
@@ -136,7 +141,7 @@ nav {
   
   .button:hover {
     box-shadow: 0 0 5px #8c00ff, 0 0 25px #8c00ff, 0 0 50px #8c00ff, 0 0 200px #8c00ff;
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .buttons-container {
