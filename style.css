@@ -8,7 +8,7 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-    background-size: 1000% 1000%;
+    background-size: 400% 400%;
     animation: gradientBG 10s ease infinite;
 }
 
@@ -40,9 +40,14 @@ nav {
 }
 
 .logo a {
-  color: #f0f0f0;
+  color: #64009e;
   text-decoration: none;
   font-size: 1.5em;
+}
+.logo a:hover {
+  color: #7d0cbe;
+  font-size: 1.5em;
+  text-shadow: 0 0 10px #7d0cbe;
 }
 
 .links {
@@ -55,21 +60,21 @@ nav {
 }
 
 .links li a {
-  color: #f0f0f0;
+  color: #443f3f;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .links li a.active,
 .links li a:hover {
-  color: #ffcc00;
-  text-shadow: 0 0 10px #ffcc00;
+  color: #757575;
+  text-shadow: 0 0 10px #757575;
 }
 
 button {
   font-family: 'Orbitron', sans-serif;
   background-image: linear-gradient(45deg, #6c00c4, #0026ff, #00c3ff);
-  color: #ffffff;
+  color: rgb(16, 16, 112);
   border: none;
   padding: 20px 40px;
   text-align: center;
@@ -80,10 +85,10 @@ button {
   cursor: pointer;
   box-shadow: 0 5px #333;
   transition: all 0.3s ease;
-  border-radius: 8px;
+  border-radius: 15px;
   /* Added animated gradient */
-  background-size: 200% 200%;
-  animation: gradientShift 5s linear infinite;
+  background-size: 500% 500%;
+  animation: gradientShift 10s linear infinite;
 }
 
 /* Add keyframes for the gradient animation */
@@ -95,24 +100,18 @@ button {
 
 button:hover {
   box-shadow: 0 0 5px #8c00ff, 0 0 25px #8c00ff, 0 0 50px #8c00ff, 0 0 200px #8c00ff;
-  font-size: 20px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 .buttons-container {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: wrap;
   align-items: center;
   margin: 20px 0;
 }
-
-
-
-
-.mp3 {
-    display: none;
-}
-
 
 .p-1 {
     background-color: #1c1c1c;
@@ -120,4 +119,38 @@ button:hover {
     border-left: 5px solid #5900ff;
     margin: 20px 0;
     font-size: large;
+}
+.p-1:hover{
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #1c1c1c;
+  color: #6d6b6b;
+  text-shadow: 0 0 10px #575656;
+}
+/*.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.search-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
 }
