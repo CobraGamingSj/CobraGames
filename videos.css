@@ -1,154 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 
 body {
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #ff0000, #622899, #c54343);
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    background-size: 400% 400%;
-    animation: gradientBG 5s ease infinite;
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(135deg, #ff0000, #622899, #c54343);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
 }
 
 @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-p{
-    font-family:'Orbitron', sans-serif;
-    background-color: #0e0d0d;
-    padding: 15px;
-    border-left: 5px solid #5900ff;
-    margin: 20px 0;
+p {
+  font-family: "Orbitron", sans-serif;
+  background-color: #0e0d0d;
+  padding: 15px;
+  border-left: 5px solid #5900ff;
+  margin: 20px 0;
 }
 
+.p:hover {
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #1c1c1c;
+  color: #6d6b6b;
+  text-shadow: 0 0 10px #575656;
+  transition: 0.25s;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Navigation styles */
 nav {
-    background-color: #1c1c1c;
-    color: #f0f0f0;
-    padding: 10px 0;
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  padding: 10px 0;
 }
 
 /* Content styles */
 .content {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Logo styles */
 .logo a {
-    color: #64009e;
-    text-decoration: none;
-    font-size: 1.5em;
-  }
-  .logo a:hover {
-    color: #7d0cbe;
-    font-size: 1.5em;
-    text-shadow: 0 0 10px #7d0cbe;
-  }
+  color: #64009e;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.logo a:hover {
+  color: #7d0cbe;
+  font-size: 1.5em;
+  text-shadow: 0 0 10px #7d0cbe;
+  transition: 0.25s;
+}
 
 /* Navigation links styles */
 .links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .links li {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .links li a {
-    color: #f0f0f0;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: #443f3f;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-
 .links li a.active,
 .links li a:hover {
-    color: #ffcc00;
-    text-shadow: 0 0 10px #ffcc00;
+  color: #757575;
+  text-shadow: 0 0 10px #757575;
+  transition: 0.25s;
 }
 
 .video-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: space-evenly;
+  margin: 30px 0;
 }
 
 .video {
-    flex: 1 1 calc(33.333% - 20px);
-    margin-bottom: 20px;
+  display: flex;
+  flex: 1 1 calc(33.333% - 20px);
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
 @media screen and (max-width: 900px) {
-    .video {
-        flex: 1 1 calc(50% - 20px);
-    }
+  .video {
+    flex: 1 1 calc(50% - 20px);
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .video {
-        flex: 1 1 100%;
-    }
+  .video {
+    flex: 1 1 100%;
+  }
 }
 
 .button {
-    font-family: 'Orbitron', sans-serif;
-    background-image: linear-gradient(45deg, #6c00c4, #0026ff, #00c3ff);
-    color: #ffffff;
-    border: none;
-    padding: 20px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 10px;
-    cursor: pointer;
-    box-shadow: 0 5px #333;
-    transition: all 0.3s ease;
-    border-radius: 8px;
-    /* Added animated gradient */
-    background-size: 200% 200%;
-    animation: gradientShift 5s linear infinite;
+  font-family: "Orbitron", sans-serif;
+  background-image: linear-gradient(45deg, #6c00c4, #0026ff, #00c3ff);
+  color: #ffffff;
+  border: none;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px #333;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  /* Added animated gradient */
+  background-size: 200% 200%;
+  animation: gradientShift 5s linear infinite;
+}
+
+/* Add keyframes for the gradient animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 100% 50%;
   }
-  
-  /* Add keyframes for the gradient animation */
-  @keyframes gradientShift {
-    0% { background-position: 100% 50%; }
-    50% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
+  50% {
+    background-position: 0% 50%;
   }
-  
-  .button:hover {
-    box-shadow: 0 0 5px #8c00ff, 0 0 25px #8c00ff, 0 0 50px #8c00ff, 0 0 200px #8c00ff;
-    font-size: 18px;
+  100% {
+    background-position: 100% 50%;
   }
-  
-  .buttons-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
+}
+
+.button:hover {
+  box-shadow: 0 0 5px #8c00ff, 0 0 25px #8c00ff, 0 0 50px #8c00ff,
+    0 0 200px #8c00ff;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  transition: 0.25s;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.button2yt {
+  font-family: "Orbitron", sans-serif;
+  background-image: linear-gradient(45deg, #ff0000, #000000, #20005a);
+  color: #ffffff;
+  border: none;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px #333;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  /* Added animated gradient */
+  background-size: 200% 200%;
+  animation: gradientShift 15s linear infinite;
+}
+.button2yt:hover {
+  box-shadow: 0 0 5px #a30000, 0 0 25px #4b00ad, 0 0 50px #4b00ad,
+    0 0 200px #370080;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 5px rgb(80, 80, 80);
+  font-size: 19px;
+  transition: 1.5s;
+  transition: 0.25s;
+}
